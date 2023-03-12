@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+}
+.container {
+  width: 100%;
+  height: 1vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas:
+    "goal team timeline"
+    " scope primary timeline";
+}
+.goal {
+  grid-area: goal;
+}
+.team {
+  grid-area: team;
+}
+.timeline {
+  grid-area: timeline;
+}
+.scope {
+  grid-area: scope;
+}
+.primary {
+  grid-area: primary;
+}
+h2 {
+  color: blue;
+  margin: 0 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ced4da;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 20px;
+}
+
+.goal {
+  grid-area: goal;
+  border: 10px solid blue;
+}
+.team {
+  grid-area: team;
+  border-top: 10px solid blue;
+  border-bottom: 10px solid blue;
+}
+.timeline {
+  grid-area: timeline;
+  border: 10px solid blue;
+}
+.scope {
+  grid-area: scope;
+  border-left: 10px solid blue;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid blue;
+}
+.primary {
+  grid-area: primary;
+  border-bottom: 10px solid blue;
+}
+
+/* Goals */
+.goal-item {
+  display: flex;
+  margin: 20px;
+  line-height: 1.5;
+  border-bottom: 1px solid #dee2e6;
+}
+/* Item */
+.team-item {
+  display: flex;
+  margin: 0 20px;
+  line-height: 1.5;
+}
+.team-caption {
+  margin: 20px;
+}
+/* Timeline */
+.timeline {
+}
+.timeline-item {
+  display: flex;
+  align-items: center;
+}
+.number {
+  font-size: 20px;
+  margin: 18px;
+  padding: 10px;
+  background-color: #b197fc;
+  color: white;
+  border: 1px solid #b197fc;
+  border-radius: 50%;
+}
+.timeline-caption {
+  border-bottom: 1px dotted #a5d8ff;
+}
+/* Scope */
+.scope-item {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+}
+.container-scope {
+  display: flex;
+}
+.p1 {
+  margin-bottom: 10px;
+}
+/* Primary */
+.primary-item {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.icon-primary {
+  transform: scale(2);
+}
+/* tablet */
+@media (min-width: 600px) and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "goal"
+      " scope"
+      "team"
+      "primary"
+      "timeline";
+    grid-template-columns: 1fr;
+  }
+
+  .icon {
+    margin: 0 auto;
+    display: flex;
+  }
+  /* goal */
+  .goal-item {
+    display: block;
+  }
+  /* scope */
+  .container-scope {
+    display: block;
+    margin-bottom: 20px;
+  }
+  /* team */
+  .team {
+    border-width: 0 10px 10px 10px;
+    border-color: blue;
+    border-style: solid;
+  }
+  .team-item {
+    display: block;
+  }
+  .team h2 {
+    margin-bottom: 10px;
+  }
+  /* primary */
+  .primary {
+    border-width: 0 10px 0px 10px;
+    border-color: blue;
+    border-style: solid;
+  }
+  .primary-item {
+    display: block;
+  }
+  .primary p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* timeline */
+  .timeline-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .number {
+    width: fit-content;
+  }
+  .timeline p {
+    margin-left: 18px;
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "goal"
+      " scope"
+      "team"
+      "primary"
+      "timeline";
+    grid-template-columns: 1fr;
+  }
+  .icon {
+    margin: 0 auto;
+    display: flex;
+  }
+  /* goal */
+  .goal-item {
+    display: block;
+  }
+  /* scope */
+  .container-scope {
+    display: block;
+    margin-bottom: 20px;
+  }
+  /* team */
+  .team {
+    border-width: 0 10px 10px 10px;
+    border-color: blue;
+    border-style: solid;
+  }
+  .team-item {
+    display: block;
+  }
+  .team h2 {
+    margin-bottom: 10px;
+  }
+  /* primary */
+  .primary {
+    border-width: 0 10px 0px 10px;
+    border-color: blue;
+    border-style: solid;
+  }
+  .primary-item {
+    display: block;
+  }
+  .primary p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* timeline */
+  .timeline-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .number {
+    width: fit-content;
+  }
+  .timeline p {
+    margin-left: 18px;
+  }
+}

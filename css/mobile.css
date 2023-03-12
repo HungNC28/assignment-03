@@ -1,0 +1,77 @@
+@media (max-width: 600px) {
+  /* Navbar */
+  .nav3 {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav1 {
+    padding: 12px;
+  }
+  /* Infor target */
+  .infor-target {
+    grid-template-columns: 1fr;
+  }
+  #target {
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  #infor {
+    margin-left: 30px;
+    padding-left: 10px;
+    margin-right: 0;
+  }
+  /* infor-job */
+  .infor-job {
+    grid-template-areas:
+      "experience"
+      "education"
+      "activity"
+      "hobby"
+      "language"
+      "skill";
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+  }
+  .section {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  /* CERTIFICATE */
+  .section-content-cert {
+    grid-template-columns: 1fr;
+  }
+  #certificate {
+    margin-right: 0;
+    margin-left: 30px;
+    padding-left: 10px;
+  }
+  .certificate-1 {
+    margin-top: 20px;
+    border-bottom: 1px solid #d6c08d;
+    padding-bottom: 40px;
+  }
+  .cert2::before {
+    display: none;
+  }
+  /* project */
+  .section-project {
+    padding-left: 30px;
+  }
+  .section-content-pro {
+    flex-direction: column;
+  }
+  .section-content-project {
+    width: 100%;
+  }
+  .item2 {
+    flex-direction: column;
+  }
+  .Developer {
+    margin-left: -20px;
+  }
+}

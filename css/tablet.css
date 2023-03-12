@@ -1,0 +1,67 @@
+@media (min-width: 600px) and (max-width: 768px) {
+  /* Navbar */
+  .nav3 {
+    display: none;
+  }
+  /* Infor-target */
+  .infor-target {
+    margin-bottom: 20px;
+  }
+  .me .infor1 {
+    width: fit-content;
+    display: inline-block;
+  }
+  /* Infor-job */
+  .infor-job {
+    display: grid;
+    grid-template-areas:
+      "experience education"
+      "activity hobby"
+      "language skill";
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  /* CERTIFICATE */
+  .section-content-cert {
+    grid-template-rows: 1fr 1fr;
+  }
+  #certificate {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  .img-cert {
+    width: 40vw;
+  }
+  .certificate-1 {
+    display: block;
+  }
+  .certificate-2 {
+    margin-bottom: 10px;
+  }
+  .GPA {
+    margin-top: 0;
+  }
+  .cert1 {
+    height: 250px;
+  }
+  .cert2 {
+    height: 250px;
+  }
+  /* Project */
+  .section-project {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .item1-cv {
+    height: 79px;
+  }
+  .item3-cv,
+  .item3-web,
+  .item3-new {
+    height: 180px;
+  }
+}
